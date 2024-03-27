@@ -1,0 +1,5 @@
+.csstest {
+  border: 2px solid black; /* Bordure rouge de 2px d'épaisseur */
+  border-radius: 5px; /* Coins arrondis de 5px */
+  text-shadow: 0 0 2px black; /* Ombre noire autour du texte */
+}

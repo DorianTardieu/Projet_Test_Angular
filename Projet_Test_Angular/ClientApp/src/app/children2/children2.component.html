@@ -1,0 +1,5 @@
+<br /><button (click)="toggleBouton()" [disabled]="boutonActive"> Bouton</button>
+
+<div *ngIf="boutonActive; else boutonDesactive">Bouton activé !</div>
+<ng-template #boutonDesactive>Bouton désactivé</ng-template>
+

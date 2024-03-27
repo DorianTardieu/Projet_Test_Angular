@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  border: 2px solid #ccc; /* Ajoute une bordure de 2 pixels solide avec une couleur grise (#ccc) */
+  padding: 10px; /* Ajoute une marge intérieure de 10 pixels pour séparer le contenu de la bordure */
+}
+.full-width-height {
+  width: 100%;
+  height: 100%;
+}

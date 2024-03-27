@@ -1,0 +1,15 @@
+
+
+<div class="full-width-height">
+
+
+  <h2>Liste des CVs</h2>
+  <ul class="custom-list">
+    <li *ngFor="let cv of cvs" (click)="showDetails(cv)" class="cv-item">
+      {{ cv.name }}
+    </li>
+  </ul>
+  <app-detail *ngIf="selectedCv" [cv]="selectedCv"></app-detail>
+
+
+</div>

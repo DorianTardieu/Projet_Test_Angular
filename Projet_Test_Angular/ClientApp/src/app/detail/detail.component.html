@@ -1,0 +1,19 @@
+
+
+<div class="full-width-height">
+
+
+  <div *ngIf="cv">
+    <h2>Détails du CV</h2>
+    <p><strong>Nom:</strong> {{ cv.name }}</p>
+    <p><strong>Email:</strong> {{ cv.email }}</p>
+    <p><strong>Téléphone:</strong> {{ cv.phone }}</p>
+    <p><strong>Compétences:</strong></p>
+    <ul>
+      <li *ngFor="let skill of cv.skills">{{ skill }}</li>
+    </ul>
+    <img src="{{cv.image}}" alt="Photo de profil" height="100" width="100">
+  </div>
+
+
+</div>
