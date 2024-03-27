@@ -1,14 +1,58 @@
-<p>carte-visite works!</p>
-<form (ngSubmit)="onSubmit()">
-  <input type="text" [(ngModel)]="nom" name="nom" placeholder="Nom" required>
-  <input type="text" [(ngModel)]="prenom" name="prenom" placeholder="Prénom" required>
-  <input type="number" [(ngModel)]="age" name="age" placeholder="Âge" required>
-  <textarea [(ngModel)]="description" name="description" placeholder="Description"></textarea>
-</form>
+<section class="intro">
+  <div class="bg-image h-100">
+    <div class="mask d-flex align-items-center h-100" style="background-color: white;">
+      <div class="container ">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-lg-9 col-xl-8">
+            <div class="card background" style="border-radius: 1rem;">
+              <div class="row g-0">
+               
+                <div class="col-md-8 d-flex align-items-center">
+                  <div class="card-body py-5 px-4 p-md-5">
 
+                    <form (ngSubmit)="onSubmit()">
+                      <h4 class="fw-bold mb-4" style="color: white;">Carte de visite</h4>
 
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form2Example2" name="prenom" class="form-control" [(ngModel)]="prenom" placeholder="prenom" />
 
-  <div class="csstest">
-    Nom:{{nom}}<br /> Prenom:{{prenom}}<br /> Age:{{age}}<br /> Description:{{description}}
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form2Example1" name="nom" class="form-control" [(ngModel)]="nom" placeholder="nom" />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form2Example2" name="age" class="form-control" [(ngModel)]="age" placeholder="age" />
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form2Example2" name="description" class="form-control" [(ngModel)]="description" placeholder="description" />
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+<br />
+
+
+<section class="mx-auto my-5" style="max-width: 23rem;">
+  <div class="card testimonial-card mt-2 mb-3" style="border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+
+
+    <div class="card-body text-center">
+      <h4 class="card-title font-weight-bold">{{ prenom }} {{ nom }}</h4>
+      <h3>{{ age }}</h3>
+      <p>
+        <i class="fas fa-quote-left"></i>{{ description }}
+      </p>
+    </div>
+  </div>
+</section>
 
